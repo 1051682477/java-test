@@ -15,3 +15,6 @@ public class EmployeeStatic {
         System.out.println(DEPARTMENT + name + "部门工资：" + salary + "元");
     }
 }
+
+
+
