@@ -9,14 +9,14 @@ public class Employee {
     private long bankNum;
     private String bankName;
 
-    //在构造器中对name赋值
+    //在构造器中对**赋值
     public Employee(String empName, String empAge, String empSex) {
         name = empName;
         age = empAge;
         sex = empSex;
     }
 
-    //设定工资salary值
+    //设定工资**值
     public void setSalary(double empSal) {
         salary = empSal;
     }
