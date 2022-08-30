@@ -49,5 +49,6 @@ public class GoodsTest {
         System.out.println(avg);
 
 
+
     }
 }
