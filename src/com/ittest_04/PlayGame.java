@@ -11,7 +11,7 @@ public class PlayGame {
                 break;
             }
             r2.attack(r1);
-            if (r2.getBlood() == 0){
+            if (r1.getBlood() == 0){
                 System.out.println(r2.getName()+"ko"+r1.getName());
                 break;
             }

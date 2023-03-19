@@ -1,44 +1,43 @@
 package com.ittest_04;
 
 public class GirlFriend {
-    //属性
-
-
     private String name;
-    private String gender;
     private int age;
+    private String gender;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
 
     public void setAge(int age) {
-        if (age >= 18 && age < 50) {
+        if(age >= 18 && age<=50){
             this.age = age;
-        } else {
+        }else {
             System.out.println("非法");
         }
     }
 
-    public int getAge() {
+    public int getAge(){
         return age;
     }
 
-    public void setName(String n) {
-        name = n;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
-    public String getName(){
-        return name;
-    }
-    public void setGender(String g) {
-        gender = g;
-    }
+
     public String getGender(){
         return gender;
     }
 
-    //行为
-    public void sleep() {
-        System.out.println("睡觉");
+    public String sleep() {
+        return "正在睡觉";
     }
 
     public void eat() {
-        System.out.println("吃饭");
+        System.out.println("正在吃饭");
     }
 }

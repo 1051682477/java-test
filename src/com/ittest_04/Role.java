@@ -16,6 +16,7 @@ public class Role {
 
     /**
      * 获取
+     *
      * @return name
      */
     public String getName() {
@@ -24,6 +25,7 @@ public class Role {
 
     /**
      * 设置
+     *
      * @param name
      */
     public void setName(String name) {
@@ -32,6 +34,7 @@ public class Role {
 
     /**
      * 获取
+     *
      * @return blood
      */
     public int getBlood() {
@@ -40,18 +43,20 @@ public class Role {
 
     /**
      * 设置
+     *
      * @param blood
      */
     public void setBlood(int blood) {
         this.blood = blood;
     }
-    public void attack(Role role){
+
+    public void attack(Role role) {
         Random r = new Random();
-        int hurt = r.nextInt(20)+1;
-        int remainBlood = role.getBlood()-hurt;
-        remainBlood = remainBlood<0?0:remainBlood;
+        int hurt = r.nextInt(20) + 1;
+        int remainBlood = role.getBlood() - hurt;
+        remainBlood = remainBlood < 0 ? 0 : remainBlood;
         role.setBlood(remainBlood);
-        System.out.println(this.name+"拿起剑,刺了"+role.getName()+"一下"+"造成了"+hurt+"点伤害,"+role.getName()+"还剩下"+remainBlood+"点血");
+        System.out.println(this.name + "拿起剑,刺了" + role.getName() + "一下" + "造成了" + hurt + "点伤害," + role.getName() + "还剩下" + remainBlood + "点血");
     }
 
 }

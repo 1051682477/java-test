@@ -1,29 +1,26 @@
-package com.ittest_04;
+package com.test0318;
 
 public class Student {
-    private int id;
+    private String id;
     private String name;
     private int age;
-
-    public boolean checkID(){
-        return id == 3;
-    }
+    private String address;
 
     public Student() {
     }
 
-    public Student(int id, String name, int age) {
+    public Student(String id, String name, int age, String address) {
         this.id = id;
         this.name = name;
         this.age = age;
-
+        this.address = address;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -42,4 +39,13 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
+
